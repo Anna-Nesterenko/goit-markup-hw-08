@@ -1,0 +1,28 @@
+.footer-social--title {
+  margin-bottom: 20px;
+  color: $WhiteTextColor;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 60px;
+
+  @media not (min-width: 1200px) {
+    margin-top: 0px;
+  }
+}
+
+.social__footer {
+  display: flex;
+}
+
+.social__link--footer {
+  @extend %social;
+  @include FlexJustiAlign();
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: $WhiteTextColor;
+  transition: background-color $TimingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $AccentColor;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/reset";
+@import "./base/global";
+
+@import "./components/page-header";
+
+@import "./components/studio-hero";
+@import "./components/studio-main";
+@import "./components/studio-cards";
+@import "./components/studio_client";
+
+@import "./components/portfolio-btn";
+@import "./components/portfolio-cards";
+
+@import "./components/page-footer";
+@import "./components/footer-social";
+@import "./components/footer-form";
+
+@import "./components/modal";
+@import "./components/modal-forms";

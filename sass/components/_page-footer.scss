@@ -1,0 +1,86 @@
+.footer {
+  background-color: $BackgroundBoxDark;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__address {
+    min-width: 231px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+}
+
+.container__footer {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include FlexWrap();
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include FlexJustiAlign($justify: null, $align: baseline);
+    text-align: start;
+  }
+}
+
+.logo__light {
+  color: $WhiteTextColor;
+}
+
+.address {
+  margin-top: 20px;
+
+  &__item--map {
+    padding-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 9px;
+    }
+  }
+}
+
+.address__item {
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 9px;
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.address__link {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  transition: color $TimingFunction;
+
+  &:focus,
+  &:hover {
+    color: $AccentColor;
+  }
+}
+
+.address__link--map {
+  display: block;
+  color: $WhiteTextColor;
+  font-style: normal;
+  line-height: 1.71;
+  transition: color $TimingFunction;
+
+  &:focus,
+  &:hover {
+    color: $AccentColor;
+  }
+}

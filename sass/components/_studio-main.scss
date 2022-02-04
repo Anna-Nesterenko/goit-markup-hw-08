@@ -1,0 +1,98 @@
+.container--poz {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: -30px;
+  }
+}
+
+.qualities {
+  @media screen and (min-width: 768px) {
+    @include FlexWrap();
+    justify-content: space-between;
+  }
+}
+
+.qualities__box {
+  @include FlexJustiAlign();
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: $BackgroundBoxLight;
+  margin-bottom: 30px;
+}
+
+.qualities__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: $SecondTextColor;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.qualities__text {
+  line-height: 1.71;
+}
+
+.qualities__item {
+  width: 100%;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+}
+
+.section--none {
+  padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.section__title {
+  @extend %cards-title;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    @include FlexWrap();
+    margin-top: 50px;
+
+    &__title {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+      @include FlexJustiAlign();
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $WhiteTextColor;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+  }
+
+  .examples__item {
+    position: relative;
+    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

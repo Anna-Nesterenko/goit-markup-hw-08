@@ -1,0 +1,75 @@
+.section--background {
+  background-color: $BackgroundBoxLight;
+}
+
+.team {
+  @media screen and (min-width: 768px) {
+    @include FlexWrap();
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -30px;
+  }
+}
+
+.team__item {
+  @extend %box-shadow-team;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+}
+
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  background-color: $WhiteTextColor;
+
+  &--title {
+    @include FontSize(16px, 1.19);
+    text-align: center;
+    font-weight: 500;
+    color: $SecondTextColor;
+  }
+}
+
+.team__box--text {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  @include FontSize(16px, 1.19);
+  text-align: center;
+  color: $MainTextColor;
+}
+
+.social {
+  @include FlexJustiAlign($align: none);
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.social__link {
+  @extend %social;
+  @include FlexJustiAlign();
+  background-color: $WhiteTextColor;
+  color: $ColorIconMain;
+  transition: color $TimingFunction, background-color $TimingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $AccentColor;
+    color: $WhiteTextColor;
+  }
+}
