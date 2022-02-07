@@ -25,11 +25,10 @@
 
     <header class="header">
       <div class="container container__header">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__dark">Studio</span>
+        </a>
         <nav class="header__nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__dark">Studio</span></a
-          >
-
           <ul class="nav">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студия</a>
@@ -61,11 +60,7 @@
             >
           </li>
         </ul>
-        <button
-          type="button"
-          class="button-menu button-menu--open"
-          data-menu-open
-        >
+        <button type="button" class="button-open" data-menu-open>
           <svg class="button-menu__icon" width="40px" height="40px">
             <use href="./imeges/icons.svg#icon-menu"></use>
           </svg>
@@ -73,27 +68,21 @@
       </div>
 
       <div class="mobile-menu is-hidden" data-menu>
-        <div class="container container__mobile-menu">
+        <div class="container__mobile-menu">
           <div class="mobile-menu__top">
-            <button
-              type="button"
-              class="button-menu button-menu--close"
-              data-menu-close
-            >
+            <button type="button" class="button-close" data-menu-close>
               <svg class="mobile-menu__icon" width="40px" height="40px">
                 <use href="./imeges/icons.svg#icon-menu-close"></use>
               </svg>
             </button>
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a
-                  class="mobile-menu__link"
-                  href="./index.html"
-                  >Студия</a
-                >
+                <a class="mobile-menu__link" href="./index.html">Студия</a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html"
+                <a
+                  class="mobile-menu__link mobile-menu__link--current"
+                  href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
@@ -694,7 +683,7 @@
         <form class="footer-form" autocomplete="off">
           <h2 class="footer-form__title">Подпишитесь на рассылку</h2>
           <div class="footer-form__wrap">
-            <label for="mail">
+            <label>
               <input
                 class="footer-form__input"
                 type="email"

@@ -1,13 +1,16 @@
+.footer-social {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
 .footer-social--title {
   margin-bottom: 20px;
   color: $WhiteTextColor;
   font-size: 14px;
   text-transform: uppercase;
-  margin-top: 60px;
-
-  @media not (min-width: 1200px) {
-    margin-top: 0px;
-  }
 }
 
 .social__footer {

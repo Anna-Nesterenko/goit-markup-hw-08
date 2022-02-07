@@ -1,4 +1,8 @@
 .backdrop {
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
   position: fixed;
   top: 0;
   left: 0;
@@ -23,16 +27,20 @@
 }
 
 .modal {
+  @media screen and (min-width: 550px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%), scale(1);
   min-width: 90vw;
-  min-height: 581px;
   background-color: $WhiteTextColor;
   border-radius: 4px;
   @extend %box-shadow-team;
-  transition: transform $TimingFunction, box-shadow $TimingFunction;
+  transition: box-shadow $TimingFunction;
 
   @media screen and (min-width: 480px) {
     min-width: 450px;

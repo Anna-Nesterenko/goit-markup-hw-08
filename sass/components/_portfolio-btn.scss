@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 40px;
+  margin-top: -15px;
 
   @media screen and (min-width: 768px) {
     @include FlexJustiAlign();
     margin-bottom: 30px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: 1200px) {

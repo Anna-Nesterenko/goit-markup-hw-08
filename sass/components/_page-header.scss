@@ -1,25 +1,26 @@
 .header {
   border-bottom: 1px solid #ececec;
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 
   &__nav {
     @media screen and (min-width: 768px) {
       @include FlexJustiAlign($justify: null);
+      margin-left: 88px;
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+      }
     }
   }
 }
 
 .container__header {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    @include FlexJustiAlign($justify: null);
-  }
-
-  @media screen and (min-width: 1200px) {
-    align-items: baseline;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
@@ -41,12 +42,6 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: 93px;
   }
 
   &__item:not(:last-child) {
@@ -92,8 +87,6 @@
 
   @media screen and (min-width: 768px) {
     margin-left: auto;
-    display: flex;
-    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
@@ -111,22 +104,24 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact__item {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact__item {
     & + & {
       margin-left: 50px;
     }
 
-    & {
+    & + & {
+      margin-top: 0;
       @include FlexJustiAlign($justify: null);
       flex-direction: row-reverse;
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .contact__item {
-    & + & {
-      margin-top: 10px;
     }
   }
 }

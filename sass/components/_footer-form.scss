@@ -1,18 +1,16 @@
 .footer-form {
+  margin-top: 60px;
+
   @media screen and (min-width: 1200px) {
     margin-left: auto;
+    margin-top: 0;
   }
 
   &__title {
-    margin-top: 60px;
     margin-bottom: 20px;
     font-size: 14px;
     text-transform: uppercase;
     color: $WhiteTextColor;
-
-    @media screen and (min-width: 1200px) {
-      margin-top: 0;
-    }
   }
 }
 

@@ -24,11 +24,10 @@
 
     <header class="header">
       <div class="container container__header">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__dark">Studio</span></a
+        >
         <nav class="header__nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__dark">Studio</span></a
-          >
-
           <ul class="nav">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html"
@@ -61,11 +60,7 @@
           </li>
         </ul>
 
-        <button
-          type="button"
-          class="button-menu"
-          data-menu-open
-        >
+        <button type="button" class="button-open" data-menu-open>
           <svg class="button-menu__icon" width="40px" height="40px">
             <use href="./imeges/icons.svg#icon-menu"></use>
           </svg>
@@ -75,11 +70,7 @@
       <div class="mobile-menu is-hidden" data-menu>
         <div class="container__mobile-menu">
           <div class="mobile-menu__top">
-            <button
-              type="button"
-              class="button-menu"
-              data-menu-close
-            >
+            <button type="button" class="button-close" data-menu-close>
               <svg class="mobile-menu__icon" width="40px" height="40px">
                 <use href="./imeges/icons.svg#icon-menu-close"></use>
               </svg>
@@ -179,8 +170,8 @@
       </section>
 
       <!-- !Список качеств-->
-      <section class="section qualities">
-        <div class="container container--poz">
+      <section class="section">
+        <div class="container">
           <h2 class="visually-hidden">Список качеств</h2>
           <ul class="qualities">
             <li class="qualities__item">
@@ -298,7 +289,7 @@
 
       <!-- !Наша команда -->
       <section class="section section--background">
-        <div class="container container--poz">
+        <div class="container">
           <h2 class="section__title section__title--poz">Наша команда</h2>
 
           <ul class="team">
@@ -333,8 +324,8 @@
               </picture>
 
               <div class="team__box">
-                <h3 class="team__box--title">Игорь Демьяненко</h3>
-                <p lang="en" class="team__box--text">Product Designer</p>
+                <h3 class="team__title">Игорь Демьяненко</h3>
+                <p lang="en" class="team__text">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link">
@@ -399,8 +390,8 @@
               </picture>
 
               <div class="team__box">
-                <h3 class="team__box--title">Ольга Репина</h3>
-                <p lang="en" class="team__box--text">Frontend Developer</p>
+                <h3 class="team__title">Ольга Репина</h3>
+                <p lang="en" class="team__text">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link">
@@ -465,8 +456,8 @@
               </picture>
 
               <div class="team__box">
-                <h3 class="team__box--title">Николай Тарасов</h3>
-                <p lang="en" class="team__box--text">Marketing</p>
+                <h3 class="team__title">Николай Тарасов</h3>
+                <p lang="en" class="team__text">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link">
@@ -531,8 +522,8 @@
               </picture>
 
               <div class="team__box">
-                <h3 class="team__box--title">Михаил Ермаков</h3>
-                <p lang="en" class="team__box--text">UI Designer</p>
+                <h3 class="team__title">Михаил Ермаков</h3>
+                <p lang="en" class="team__text">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link">
@@ -690,7 +681,7 @@
         <form class="footer-form" autocomplete="off">
           <h2 class="footer-form__title">Подпишитесь на рассылку</h2>
           <div class="footer-form__wrap">
-            <label for="mail">
+            <label>
               <input
                 class="footer-form__input"
                 type="email"
