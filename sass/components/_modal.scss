@@ -23,6 +23,7 @@
 .modal {
   position: relative;
   min-width: 90vw;
+
   background-color: $WhiteTextColor;
   border-radius: 4px;
   @extend %box-shadow-team;
@@ -34,7 +35,8 @@
 
   @media screen and (min-width: 550px) {
     position: absolute;
-    top: 60%;
+    min-height: 581px;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

@@ -1239,7 +1239,8 @@ ul {
 @media screen and (min-width: 550px) {
   .modal {
     position: absolute;
-    top: 60%;
+    min-height: 581px;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
