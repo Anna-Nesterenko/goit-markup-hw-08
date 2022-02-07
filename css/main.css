@@ -432,6 +432,12 @@ ul {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contact__tel {
+    font-size: 30px;
+  }
+}
+
 .mobile-contact__mail {
   font-size: 24px;
   font-weight: 500;
