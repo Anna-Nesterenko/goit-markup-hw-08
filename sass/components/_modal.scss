@@ -20,30 +20,23 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden {
-  .modal {
-    transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
-  }
-}
-
 .modal {
-  @media screen and (min-width: 550px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  position: absolute;
-  transform: translate(-50%, -50%), scale(1);
+  position: relative;
   min-width: 90vw;
   background-color: $WhiteTextColor;
   border-radius: 4px;
   @extend %box-shadow-team;
-  transition: box-shadow $TimingFunction;
+  transition: translate $TimingFunction, box-shadow $TimingFunction;
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
+  }
+
+  @media screen and (min-width: 550px) {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media screen and (min-width: 1200px) {
