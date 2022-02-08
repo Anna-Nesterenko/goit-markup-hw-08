@@ -1237,6 +1237,12 @@ ul {
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 549px) {
+  .modal {
+    height: 670px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal {
     min-width: 450px;

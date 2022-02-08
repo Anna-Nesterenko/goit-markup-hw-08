@@ -23,12 +23,14 @@
 .modal {
   position: relative;
   min-width: 90vw;
-
   background-color: $WhiteTextColor;
   border-radius: 4px;
   @extend %box-shadow-team;
   transition: translate $TimingFunction, box-shadow $TimingFunction;
 
+  @media screen and (max-width: 549px) {
+    height: 670px;
+  }
   @media screen and (min-width: 480px) {
     min-width: 450px;
   }
