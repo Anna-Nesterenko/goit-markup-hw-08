@@ -1239,7 +1239,7 @@ ul {
 
 @media screen and (max-width: 549px) {
   .modal {
-    height: 670px;
+    height: 650px;
   }
 }
 
@@ -1287,6 +1287,12 @@ ul {
 
 .modal-form {
   padding: 40px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form {
+    padding: 25px;
+  }
 }
 
 .modal-form__title {

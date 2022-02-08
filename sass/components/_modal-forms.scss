@@ -1,5 +1,8 @@
 .modal-form {
   padding: 40px;
+  @media screen and (max-width: 479px) {
+    padding: 25px;
+  }
 
   &__title {
     width: 370px;
